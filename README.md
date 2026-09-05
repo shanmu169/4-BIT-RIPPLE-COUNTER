@@ -23,8 +23,17 @@ In timing diagram Q0 is changing as soon as the negative edge of clock pulse is 
 ![image](https://github.com/naavaneetha/4-BIT-RIPPLE-COUNTER/assets/154305477/85e1958a-2fc1-49bb-9a9f-d58ccbf3663c)
 
 **Procedure**
+1.Create Project: Open Quartus Prime, start a new project, and name it ripple_counter.
 
-/* write all the steps invloved */
+2.Write Code: Create a new Verilog HDL File, write the 4-bit ripple counter code, and save it.
+
+3.Compile: Click Start Compilation and ensure there are zero errors.
+
+4.Create Waveform: Open a new Vector Waveform File (VWF) and insert the clk, reset, and q[3:0] pins.
+
+5.Set Inputs: Apply a toggling clock signal to clk and set reset to 0.
+
+6.Simulate: Click Run Functional Simulation to generate the output waveforms.
 
 **PROGRAM**
  Program for 4 Bit Ripple Counter and verify its truth table in quartus using Verilog programming.
@@ -83,3 +92,5 @@ endmodule
 <img width="1917" height="1021" alt="Screenshot 2026-09-05 100313" src="https://github.com/user-attachments/assets/586741d8-18a3-4bda-aa4c-bc6502f27c32" />
 
 **RESULTS**
+
+The functional simulation verified that the 4-bit ripple counter works correctly.Counting Sequence: With every clock pulse, the output increments sequentially in binary from 0000 (0) to 1111 (15).Rollover: After reaching 1111, the counter automatically resets and rolls over back to 0000 on the next clock pulse.
